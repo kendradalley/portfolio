@@ -1,0 +1,401 @@
+/*Variables*/
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=Hind);
+/*General*/
+body {
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  color: #767070;
+}
+
+.clearfix:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+p {
+  z-index:10;
+}
+
+.relative {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #e6ded3;
+}
+a:hover {
+  color: #e6ded3;
+  text-decoration: underline;
+}
+
+/*Navbar*/
+.navbar {
+  border: none;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar .logo {
+  width: 40px;
+  float: left;
+  /*padding: 20px 0;*/
+  margin-left: 15px;
+  z-index: 100;
+  display: inline-block;
+}
+.navbar .nav {
+  min-height: inherit;
+  margin-top: 22px;
+  z-index: 100;
+}
+.navbar .nav li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navbar .nav li a {
+  padding: 8px 0;
+  color: #fff;
+}
+.navbar .nav li a:hover, .navbar .nav li a:focus {
+  background: none;
+  color: #431E1E;
+  outline: none;
+}
+.navbar .nav li:last-child {
+  margin-right: 0;
+}
+.navbar .nav li.active a {
+  color: #431E1E;
+}
+.navbar .nav.navbar-right {
+  float: right;
+  margin-right: 15px;
+}
+.navbar.navbar-fixed {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.navbar.navbar-fixed::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 80px;
+  left: 0;
+  top: -80px;
+  transition: all 0.47s cubic-bezier(0, 0, 0.58, 1);
+}
+.navbar.menu-scroll::before {
+  top: 0;
+  background: #EAC9B8;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#intro {
+  width: 100%;
+  position: relative;
+  height: 525px;
+  overflow: hidden;
+  background-color: #EAC9B8;
+    /*background-color: #f3a183;*/
+  background-image: -webkit-linear-gradient(transparent 0px, transparent 49px, rgba(255, 255, 255, 0.2) 50px, transparent 51px, transparent 99px, rgba(255, 255, 255, 0.2) 100px), -webkit-linear-gradient(330deg, transparent 0, transparent 48px, rgba(255, 255, 255, 0.2) 49px, transparent 50px, transparent 98px, rgba(255, 255, 255, 0.2) 99px, transparent 100px), -webkit-linear-gradient(30deg, transparent 0, transparent 48px, rgba(255, 255, 255, 0.2) 49px, transparent 50px, transparent 98px, rgba(255, 255, 255, 0.2) 99px, transparent 100px), -webkit-linear-gradient(0deg,  #E3BFA5, #ffdab9);
+  background-image: linear-gradient(transparent 0px, transparent 49px, rgba(255, 255, 255, 0.2) 50px, transparent 51px, transparent 99px, rgba(255, 255, 255, 0.2) 100px), linear-gradient(120deg, transparent 0, transparent 48px, rgba(255, 255, 255, 0.2) 49px, transparent 50px, transparent 98px, rgba(255, 255, 255, 0.2) 99px, transparent 100px), linear-gradient(60deg, transparent 0, transparent 48px, rgba(255, 255, 255, 0.2) 49px, transparent 50px, transparent 98px, rgba(255, 255, 255, 0.2) 99px, transparent 100px), linear-gradient(90deg, #E3BFA5, #ffdab9);
+  background-size: 100px 100px, 115px 100px, 115px 100px, auto;
+}
+#intro .header-image {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  margin-left: -340px;
+}
+
+.brand {
+  margin-bottom: 0px;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  color: #fff;
+}
+.logo {
+  color: #767070;
+  /*padding-top: 8px;*/
+  /*padding-left: 75px;*/
+  font-size: 25px;
+  line-height: 5px;
+}
+
+.logo a {
+  color: #000;
+  padding-left: 75px;
+  font-size: 25px;
+  line-height: 18px;
+}
+
+.sublogo {
+  color: #ffffff;
+  /*padding-left: 75px;*/
+  font-size: 11px;
+  font-weight: 100;
+  text-align: left;
+  letter-spacing: 5px;
+}
+
+#header {
+  text-align: center;  
+}
+
+#welcome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+    color: white;
+/*    height: 100vh;*/
+}
+
+#header a {
+  font-size: 45px;
+  color: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#header a:hover {
+  font-size: 50px;
+}
+
+.hero {
+  text-transform: uppercase;
+  font-size: 110px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.subhero {
+  font-family: 'Playfair Display', serif;
+}
+
+
+#aboutme {
+  /*margin-top: 5px;*/
+  margin-bottom: 100px;
+  background: white;
+  color: #767070;
+  margin-left: 75px;
+  /*margin-right: 75px;*/
+}
+
+
+/*Sections*/
+#about, #portfolio, #contact, #resume {
+  padding: 140px 0 120px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+.section-title {
+  position: absolute;
+  top: -90px;
+  left: -85px;
+  text-transform: uppercase;
+  font-size: 110px;
+  font-family: 'Poppins', serif;
+  font-weight: 700;
+  color: rgba(34, 34, 34, 0.2);
+}
+
+/*About*/
+#about {
+  background: #fff;
+  height: 600px;
+}
+
+#about .section-title {
+  color: rgba(234, 201, 184, .3);
+}
+
+.about-text {
+    color: rgba(118, 112, 112, 1);
+    position: absolute;
+    top: 20px;
+
+}
+#about img {
+  position: absolute;
+  width: 300px;
+  /*top: -12px;*/
+  left: 435px;
+}
+/*Portfolio*/
+#portfolio {
+  background: #e6ded3;
+  padding-bottom: 0;
+}
+
+#portfolio .section-title {
+    color: #fff;
+}
+.portfolio-projects {
+  padding-top: 120px;
+  width: 100%;
+  position: relative;
+}
+.portfolio-projects .portfolio-filters {
+  margin-bottom: 40px;
+}
+.portfolio-projects .portfolio-filters li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.portfolio-projects .portfolio-filters li a {
+  text-transform: uppercase;
+  color: #767676;
+  font-weight: 400;
+  font-size: 14px;
+}
+.portfolio-projects .portfolio-filters li a:hover, .portfolio-projects .portfolio-filters li a.active {
+  color: #222222;
+  text-decoration: none;
+}
+.portfolio-projects .project-showcase {
+  width: 100%;
+  min-height: 385px;
+  position: relative;
+  background: #222222;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.portfolio-projects .project-showcase .project-item .project-background {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.47s cubic-bezier(0, 0, 0.58, 1);
+}
+.portfolio-projects .project-showcase .project-item .project-background.project-1 {
+  background: url(./images/simon-says.png);
+}
+.portfolio-projects .project-showcase .project-item .project-background.project-2 {
+  background: url(./images/twittergories-main.png);
+}
+.portfolio-projects .project-showcase .project-item .project-background.project-3 {
+  background: url(./images/crwl.png);
+}
+
+.portfolio-projects .project-showcase .project-item .project-background.project-4 {
+  background: url(./images/sails-app.png);
+}
+.portfolio-projects .project-showcase:hover .project-item .project-background {
+  opacity: .8;
+}
+.portfolio-projects .project-showcase .project-info {
+  padding: 30px 15px;
+  font-weight: 700;
+}
+.portfolio-projects .project-showcase .project-info .date {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.date {
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #e6ded3;
+}
+.portfolio-projects .project-showcase .project-info .project-name{
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+.portfolio-projects .project-showcase .project-info .project-category {
+  font-weight: 300;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.fa-2x {
+  font-size: 1.5em;
+}
+
+/*Resume*/
+#resume {
+  background-color: #f6f4ef;
+  color: rgba(227, 191, 165, 1);
+}
+
+#resume .section-title {
+  color:rgba(227, 191, 165, .2)
+}
+
+.skills-list {
+  margin: 50px 0;
+  padding-top: 50px;
+}
+
+.download-btn {
+  background-color: rgba(227, 191, 165, 1);
+  color: #f6f4ef;
+  border-radius: 0px;
+  width: 80%;
+  height: 50px;
+}
+
+.text-version {
+  float: right;
+}
+/*Contact*/
+
+#contact {
+  background-color: #E3BFA5;
+}
+
+#contact .section-title {
+  color: rgba(246, 244, 239, .2)
+}
+
+#contact p {
+  color: rgba(246, 244, 239, 1)
+}
+
+.get-in-touch {
+  color: rgba(246, 244, 239, 1);
+}
+
+/*Footer*/
+footer {
+  padding: 50px 0;
+}
+footer .logo {
+  width: 40px;
+  color:#000;
+}
+footer .follow .title, footer .contact .title, .skills-list .title {
+  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+footer .follow a, footer .contact a, .skills-list p {
+  color: #767676;
+  font-size: 12px;
+}
