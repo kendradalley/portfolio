@@ -293,17 +293,17 @@ a:hover {
   transition: opacity 0.47s cubic-bezier(0, 0, 0.58, 1);
 }
 .portfolio-projects .project-showcase .project-item .project-background.project-1 {
-  background: url(./images/simon-says.png);
+  background: url(./images/Optimized-simon-says.png);
 }
 .portfolio-projects .project-showcase .project-item .project-background.project-2 {
-  background: url(./images/twittergories-main.png);
+  background: url(./images/Optimized-twittergories-main.png);
 }
 .portfolio-projects .project-showcase .project-item .project-background.project-3 {
-  background: url(./images/crwl.png);
+  background: url(./images/Optimized-crwl.png);
 }
 
 .portfolio-projects .project-showcase .project-item .project-background.project-4 {
-  background: url(./images/sails-app.png);
+  background: url(./images/Optimized-sails-app.png);
 }
 .portfolio-projects .project-showcase:hover .project-item .project-background {
   opacity: .8;
@@ -329,7 +329,7 @@ a:hover {
 }
 .portfolio-projects .project-showcase .project-info .project-category {
   font-weight: 300;
-  font-size: 11px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
 .fa-2x {
